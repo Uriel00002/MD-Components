@@ -11,7 +11,11 @@ import android.view.ViewGroup;
 import com.alain.cursos.mdcomponents.R;
 import com.alain.cursos.mdcomponents.utils.Component;
 import com.alain.cursos.mdcomponents.utils.Constants;
+import com.google.android.material.badge.BadgeDrawable;
+import com.google.android.material.bottomnavigation.BottomNavigationMenu;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
 
@@ -42,6 +46,17 @@ public class BottomNavigationBarFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_bottom_navigation_bar, container, false);
+        View view = inflater.inflate(R.layout.fragment_bottom_navigation_bar, container, false);
+        mUnbinder = ButterKnife.bind( this, view);
+
+        return view;
+
     }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        mUnbinder.unbind();
+    }
+
 }

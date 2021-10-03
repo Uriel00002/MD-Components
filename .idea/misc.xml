@@ -4,10 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/ITI/AndroidStudioProjects/MDComponents/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2203125" />
-        <entry key="..\:/Users/ITI/AndroidStudioProjects/MDComponents/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/ITI/AndroidStudioProjects/MDComponents/app/src/main/res/layout/fragment_bottom_navigation_bar.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ITI/AndroidStudioProjects/MDComponents/app/src/main/res/drawable/states_colors_bottom_navigation.xml" value="0.2203125" />
+        <entry key="..\:/Users/ITI/AndroidStudioProjects/MDComponents/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/ITI/AndroidStudioProjects/MDComponents/app/src/main/res/layout/activity_scroll.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ITI/AndroidStudioProjects/MDComponents/app/src/main/res/layout/activity_static.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ITI/AndroidStudioProjects/MDComponents/app/src/main/res/layout/content_scroll.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ITI/AndroidStudioProjects/MDComponents/app/src/main/res/layout/content_static.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ITI/AndroidStudioProjects/MDComponents/app/src/main/res/layout/fragment_bottom_navigation_bar.xml" value="0.22" />
         <entry key="..\:/Users/ITI/AndroidStudioProjects/MDComponents/app/src/main/res/layout/fragment_button.xml" value="0.33" />
-        <entry key="..\:/Users/ITI/AndroidStudioProjects/MDComponents/app/src/main/res/menu/menu_bottom_nav.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ITI/AndroidStudioProjects/MDComponents/app/src/main/res/layout/item_component.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ITI/AndroidStudioProjects/MDComponents/app/src/main/res/menu/menu_bottom_nav.xml" value="0.5" />
+        <entry key="..\:/Users/ITI/AndroidStudioProjects/MDComponents/app/src/main/res/menu/menu_scroll.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
