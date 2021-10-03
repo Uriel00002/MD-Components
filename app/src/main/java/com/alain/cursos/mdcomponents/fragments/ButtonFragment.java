@@ -1,4 +1,4 @@
-package com.alain.cursos.mdcomponents;
+package com.alain.cursos.mdcomponents.fragments;
 
 
 import android.os.Bundle;
@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.alain.cursos.mdcomponents.R;
 import com.alain.cursos.mdcomponents.utils.Component;
 import com.alain.cursos.mdcomponents.utils.Constants;
 
