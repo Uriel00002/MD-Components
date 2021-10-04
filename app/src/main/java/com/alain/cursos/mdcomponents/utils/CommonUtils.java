@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment;
 
 import com.alain.cursos.mdcomponents.fragments.BottomNavigationBarFragment;
 import com.alain.cursos.mdcomponents.fragments.ButtonFragment;
+import com.alain.cursos.mdcomponents.fragments.FloatingActionBottomFragment;
 import com.alain.cursos.mdcomponents.fragments.SnackBarFragment;
 import com.alain.cursos.mdcomponents.fragments.TextFieldFragment;
 
@@ -43,6 +44,9 @@ public class CommonUtils {
                 break;
             case SnackBarFragment.TAG:
                 fragment = new SnackBarFragment();
+                break;
+            case FloatingActionBottomFragment.TAG:
+                fragment = new FloatingActionBottomFragment();
                 break;
         }
 
