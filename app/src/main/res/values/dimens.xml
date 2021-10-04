@@ -9,4 +9,6 @@
     <dimen name="cammon_padding_default">16dp</dimen>
     <dimen name="cammon_padding_bottom_scroll">64dp</dimen>
     <dimen name="common_padding_bottom_scroll">64dp</dimen>
+    <dimen name="common_padding_nano">2dp</dimen>
+    <dimen name="common_circle_radius">28dp</dimen>
 </resources>
