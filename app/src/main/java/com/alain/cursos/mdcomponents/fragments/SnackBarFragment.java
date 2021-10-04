@@ -13,7 +13,9 @@ import android.widget.Toast;
 import com.alain.cursos.mdcomponents.R;
 import com.alain.cursos.mdcomponents.utils.Component;
 import com.alain.cursos.mdcomponents.utils.Constants;
+import com.google.android.material.snackbar.Snackbar;
 
+import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.Unbinder;
 
@@ -21,24 +23,24 @@ import butterknife.Unbinder;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ButtonFragment extends Fragment {
+public class SnackBarFragment extends Fragment {
 
-    public static final String TAG = "Button";
+
+    public static final String TAG = "SnackBar";
 
     private static Component mInstance;
     Unbinder mUnbinder;
 
-
     public static Component getmInstance(){
         mInstance = new Component();
         mInstance.setName(TAG);
-        mInstance.setPhotoRes(R.drawable.img_button);
-        mInstance.setType(Constants.SCROLL);
+        mInstance.setPhotoRes(R.drawable.img_singleline_action);
+        mInstance.setType(Constants.STATIC);
         return mInstance;
     }
 
-    public ButtonFragment() {
-        // Required empty public constructor
+    public SnackBarFragment(){
+
     }
 
 
@@ -46,12 +48,15 @@ public class ButtonFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_button, container, false);
-    }
+        View view = inflater.inflate(R.layout.fragment_snack_bar, container, false);
 
-    @OnClick(R.id.btnEnable)
-    public void onViewClicked() {
-        Toast.makeText(getActivity(), R.string.status_enabled, Toast.LENGTH_LONG).show();
+        mUnbinder = ButterKnife.bind( this, view);
+
+        Snackbar.make(container, R.string.message_action_success, Snackbar.LENGTH_LONG)
+                .setAction("volver", view1 ->getActivity().finish())
+                .show();
+
+        return view;
     }
 
     @Override
