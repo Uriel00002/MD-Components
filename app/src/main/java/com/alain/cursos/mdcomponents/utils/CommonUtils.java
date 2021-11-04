@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment;
 
 import com.alain.cursos.mdcomponents.fragments.BottomNavigationBarFragment;
 import com.alain.cursos.mdcomponents.fragments.ButtonFragment;
+import com.alain.cursos.mdcomponents.fragments.CardFragment;
 import com.alain.cursos.mdcomponents.fragments.FloatingActionBottomFragment;
 import com.alain.cursos.mdcomponents.fragments.SnackBarFragment;
 import com.alain.cursos.mdcomponents.fragments.TextFieldFragment;
@@ -36,6 +37,9 @@ public class CommonUtils {
                 break;
             case TextFieldFragment.TAG:
                 fragment = new TextFieldFragment();
+                break;
+            case CardFragment.TAG:
+                fragment = new CardFragment();
                 break;
 
             //STATIC
