@@ -11,4 +11,5 @@
     <dimen name="common_padding_bottom_scroll">64dp</dimen>
     <dimen name="common_padding_nano">2dp</dimen>
     <dimen name="common_circle_radius">28dp</dimen>
+    <dimen name="card_img_size">80dp</dimen>
 </resources>
