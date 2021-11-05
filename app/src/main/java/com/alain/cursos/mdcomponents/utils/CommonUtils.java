@@ -18,6 +18,7 @@ import com.alain.cursos.mdcomponents.fragments.FloatingActionBottomFragment;
 import com.alain.cursos.mdcomponents.fragments.MenuFragment;
 import com.alain.cursos.mdcomponents.fragments.SnackBarFragment;
 import com.alain.cursos.mdcomponents.fragments.TextFieldFragment;
+import com.alain.cursos.mdcomponents.fragments.AlertDialogFragment;
 
 public class CommonUtils {
 
@@ -55,6 +56,10 @@ public class CommonUtils {
                 break;
             case MenuFragment.TAG:
                 fragment = new MenuFragment();
+                break;
+            case AlertDialogFragment.TAG:
+                fragment = new AlertDialogFragment();
+
                 break;
         }
 
