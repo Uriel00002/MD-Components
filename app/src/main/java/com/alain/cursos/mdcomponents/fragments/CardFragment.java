@@ -44,6 +44,24 @@ public class CardFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_card, container, false);
         mUnbinder = ButterKnife.bind( this, view);
 
+        RequestOptions options = new RequestOptions()
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .centerCrop();
+        Glide.with(this)
+                .load("https://media-cdn.tripadvisor.com/media/photo-l/17/f5/39/f7/fooood-at-the-food-department.jpg")
+                .apply(options)
+                .into(imgCardLarge);
+
+        chpSecond.setOnCheckedChangeListener((compoundButton, isChecked) -> {
+            if (isChecked){
+                Toast.makeText(getActivity(),"Checked Chip", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        chpThird.setOnCloseIconClickListener(view1 -> chpThird.setVisibility(View.GONE));
+
+
+
         return view;
     }
 
