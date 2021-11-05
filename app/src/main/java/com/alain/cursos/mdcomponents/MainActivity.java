@@ -1,27 +1,22 @@
 package com.alain.cursos.mdcomponents;
-
 import android.content.Intent;
 import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.alain.cursos.mdcomponents.adapters.ComponentAdapter;
 import com.alain.cursos.mdcomponents.fragments.BottomNavigationBarFragment;
+import com.alain.cursos.mdcomponents.fragments.ButtonFragment;
 import com.alain.cursos.mdcomponents.fragments.CardFragment;
 import com.alain.cursos.mdcomponents.fragments.FloatingActionBottomFragment;
+import com.alain.cursos.mdcomponents.fragments.MenuFragment;
 import com.alain.cursos.mdcomponents.fragments.SnackBarFragment;
 import com.alain.cursos.mdcomponents.fragments.TextFieldFragment;
 import com.alain.cursos.mdcomponents.utils.Component;
 import com.alain.cursos.mdcomponents.utils.Constants;
 import com.alain.cursos.mdcomponents.utils.OnClickListener;
-
 import java.util.ArrayList;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import com.alain.cursos.mdcomponents.fragments.ButtonFragment;
-
 public class MainActivity extends AppCompatActivity implements OnClickListener {
 
     @BindView(R.id.recyclerView)
@@ -47,6 +42,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         mAdapter.add(TextFieldFragment.getmInstance());
         mAdapter.add(FloatingActionBottomFragment.getmInstance());
         mAdapter.add(CardFragment.getmInstance());
+        mAdapter.add(MenuFragment.getmInstance());
     }
 
     private void configRecyclerView() {

@@ -15,6 +15,7 @@ import com.alain.cursos.mdcomponents.fragments.BottomNavigationBarFragment;
 import com.alain.cursos.mdcomponents.fragments.ButtonFragment;
 import com.alain.cursos.mdcomponents.fragments.CardFragment;
 import com.alain.cursos.mdcomponents.fragments.FloatingActionBottomFragment;
+import com.alain.cursos.mdcomponents.fragments.MenuFragment;
 import com.alain.cursos.mdcomponents.fragments.SnackBarFragment;
 import com.alain.cursos.mdcomponents.fragments.TextFieldFragment;
 
@@ -51,6 +52,9 @@ public class CommonUtils {
                 break;
             case FloatingActionBottomFragment.TAG:
                 fragment = new FloatingActionBottomFragment();
+                break;
+            case MenuFragment.TAG:
+                fragment = new MenuFragment();
                 break;
         }
 
